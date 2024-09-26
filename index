@@ -73,7 +73,7 @@
     <!-- Navbar -->
     <div class="navbar">
         <a href="#home">
-            <img src="Assets/icon.png" alt="Home" width="20" height="20">
+            <img src="icon.png" alt="Home" width="20" height="20">
             Home
         </a>
         <div class="menu">
@@ -88,7 +88,7 @@
     <!-- Image as Email Link -->
     <div class="image-link">
         <a href="mailto:lowed711@gmail.com?subject=2300734">
-            <img src="Assets/indeximage.png" alt="Click to send email">
+            <img src="indeximage.png" alt="Click to send email">
         </a>
     </div>
 
