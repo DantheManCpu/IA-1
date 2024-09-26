@@ -12,6 +12,8 @@
         }
         body {
             font-family: Arial, sans-serif;
+            color: white; /* Set the default text color to white */
+            background-color: black; /* Set the default background color to black */
         }
         /* Navbar styling */
         .navbar {
@@ -55,15 +57,22 @@
 
         /* Ensure the image is directly under the navbar */
         .image-link {
-            margin-top: 60px; /* Adjust based on the height of the fixed navbar */
+            margin-top: 10px; /* Adjust based on the height of the fixed navbar */
             text-align: center; /* This centers inline-block elements like the image */
         }
 
         .image-link img {
             display: block;
             margin: 0 auto;
-            max-width: 100%; /* Makes sure the image doesn’t exceed the container width */
+            max-width: 40%; /* Resized to more reasonable proportions */
             height: auto;
+        }
+
+        .portfolio-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
         }
 
     </style>
@@ -73,24 +82,23 @@
     <!-- Navbar -->
     <div class="navbar">
         <a href="#home">
-            <img src="icon.png" alt="Home" width="20" height="20">
+            <img src="Assets/icon.png" alt="Home" width="20" height="20">
             Home
         </a>
         <div class="menu">
-            <a href="Professional">Professional</a>
-            <a href="Personality">Personality</a>
-            <a href="Personal Development">Personal Development</a>
-            <a href="Storyboard">Storyboard</a>
-            <a href="Reference">Reference</a>
+            <a href="professional.html">Professional</a>
+            <a href="personality.html">Personality</a>
+            <a href="personal-development.html">Personal Development</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="reference.html">Reference</a>
         </div>
     </div>
 
     <!-- Image as Email Link -->
     <div class="image-link">
         <a href="mailto:lowed711@gmail.com?subject=2300734">
-            <img src="indeximage.png" alt="Click to send email">
-        </a>
-    </div>
+            <img src="Assets/indeximage.png" alt="Click to send email">
+        </div>
 
-</body>
-</html>
+    </body>
+    </html>
