@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Assets/icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: white; /* Set the default text color to black */
+            background-color: black; /* Optional, to set the background white */
+        }
+        /* Navbar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+        .navbar .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .menu a:hover {
+            color: #007BFF;
+        }
+
+        /* Style for the "Home" link */
+        .navbar a[href="#home"] {
+            font-weight: bold;
+            color: black;
+            text-decoration: none; /* Remove underline */
+            display: flex; /* Allows the image and text to be on the same line */
+            align-items: center; /* Vertically centers the image and text */
+        }
+
+        /* Image next to Home text */
+        .navbar a[href="#home"] img {
+            margin-right: 8px; /* Adds space between the image and text */
+        }
+
+        /* Page Container */
+        .container {
+            max-width: 1400px;
+            margin: 80px auto; /* Add margin to account for fixed navbar */
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .left-column, .right-column {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .avatar {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .skills, .experience, .education {
+            margin-top: 20px;
+        }
+        .skill, .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 10px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 90%; /* Adjust the width to change the progress */
+        }
+        footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">
+            <img src="Assets/icon.png" alt="Home" width="20" height="20">
+            Home
+        </a>
+        <div class="menu">
+            <a href="professional.html">Professional</a>
+            <a href="Personality">Personality</a>
+            <a href="Personal Development">Personal Development</a>
+            <a href="Storyboard">Storyboard</a>
+            <a href="Reference">Reference</a>
+        </div>
+    </div>
+
+    <!-- Page Container -->
+    <div class="container">
+
+        <!-- The Grid -->
+        <div class="grid">
+
+            <!-- Left Column -->
+            <div class="left-column">
+
+                <div class="avatar">
+                    <img src="/avatar.jpg" alt="Avatar">
+                </div>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <p>Adobe Photoshop</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Photography</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Illustrator</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Media</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <div class="experience-item">
+                        <h3 class="experience-item-header">Job Title at Company</h3>
+                        <div class="experience-item-content">
+                            <p>Details about the job and achievements.</p>
+                        </div>
+                    </div>
+                    <!-- Add more experience items as needed -->
+                </div>
+
+                <!-- Education Section -->
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3 class="education-item-header">Degree at Institution</h3>
+                        <div class="education-item-content">
+                            <p>Details about the education and achievements.</p>
+                        </div>
+                    </div>
+                    <!-- Add more education items as needed -->
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <h2>About Me</h2>
+                <p>This is where you can include information about yourself, your interests, and anything else you want to share!</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Daniel's Portfolio</p>
+    </footer>
+
+</body>
+</html>
