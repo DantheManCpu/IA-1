@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Portfolio</title>
+    <title>References - Daniel's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <style>
         * {
@@ -13,10 +13,9 @@
         }
         body {
             font-family: Arial, sans-serif;
-            color: white; /* Set the default text color to black */
-            background-color: black; /* Optional, to set the background white */
+            color: white;
+            background-color: black;
         }
-        /* Navbar styling */
         .navbar {
             position: fixed;
             top: 0;
@@ -28,7 +27,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
-
         .navbar .menu {
             display: flex;
         }
@@ -41,56 +39,40 @@
         .navbar .menu a:hover {
             color: #007BFF;
         }
-
         .navbar a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     margin-left: 20px;
 }
-
-        /* Image next to Home text */
-        .navbar a[href="#home"] img {
-            margin-right: 8px; /* Adds space between the image and text */
-        }
-
-        /* Ensure the image is directly under the navbar */
-        .image-link {
-            margin-top: 40px; /* Adjust based on the height of the fixed navbar */
-            text-align: center; /* This centers inline-block elements like the image */
-        }
-
-        .image-link img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%; /* Resized to more reasonable proportions */
-            height: auto;
-        }
-
-        .portfolio-text {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.5;
-        }
         footer {
             background-color: black;
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
+        .content {
+            margin-top: 70px; /* Space for fixed navbar */
+            padding: 20px;
+            text-align: center;
+        }
+        .reference-list {
+            text-align: left; /* Align text to the left for readability */
+            margin: 0 auto; /* Center the reference list */
+            max-width: 600px; /* Limit width for better readability */
+        }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">
-            <img src="icon.png" alt="Home" width="20" height="20">
-            Home
-        </a>
+            <img src="icon.png" alt="index.html" width="20" height="20">
+            Home </a>
         <div class="menu">
             <a href="professional.html">Professional</a>
             <a href="personality.html">Personality</a>
@@ -100,18 +82,15 @@
         </div>
     </div>
 
-
-    <!-- Image as Email Link -->
-    <div class="image-link">
-        <a href="mailto:lowed711@gmail.com?subject=2300734"></a>
-            <img src="indeximage.png" alt="Click to send email">
-        </a>
-    </div>
-
-    <!-- Text Under Image -->
-    <div class="portfolio-text">
-        Hi there, I'm Daniel.<br>
-        Welcome to my portfolio! This portfolio aims to test my knowledge and understanding of this module while sharing a bit about myself.
+    <div class="content">
+        <h1>References</h1>
+        <div class="reference-list">
+            <li>16Personalities. (n.d.). <i>Free personality test, type descriptions, relationship and career advice.</i> Retrieved from <a href="https://www.16personalities.com/" style="color: #007BFF;">https://www.16personalities.com/</a></li>
+            <li>W3Schools. (n.d.). <i>W3Schools Online Web Tutorials.</i> Retrieved from <a href="https://www.w3schools.com/" style="color: #007BFF;">https://www.w3schools.com/</a></li>
+            <p>We.B. (2023, August 24). <i>The Spectacular Spider-Man - Opening Theme | FULL VER. Cover</i> [Video]. YouTube. <a href="https://youtu.be/qsI5XTjmp48?si=JR_WPUOpmj0muZku" style="color: #007BFF;">https://youtu.be/qsI5XTjmp48?si=JR_WPUOpmj0muZku</a></p>            <li>Rohn, J., & Dobbins, M. (2006). <i>Twelve pillars: A novel.</i> Success Publishing.</li>
+        </ul>
+    
+        </div>
     </div>
 
     <footer>

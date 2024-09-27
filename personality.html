@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: white; /* Set the default text color to white */
+            background-color: black; /* Background color for the body */
+        }
+        /* Navbar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+        .navbar .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .menu a:hover {
+            color: #007BFF;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        /* Image next to Home text */
+        .navbar a[href="#home"] img {
+            margin-right: 8px; /* Adds space between the image and text */
+        }
+
+        /* Ensure the image is directly under the navbar */
+        .image-link {
+            margin-top: 60px; /* Adjust based on the height of the fixed navbar */
+            text-align: center; /* This centers inline-block elements like the image */
+        }
+
+        .portfolio-text {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Add margin to create space below the navbar */
+        section {
+            background-color: #333; /* Dark background for sections */
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-top: 100px; /* Added margin-top to create space below navbar */
+        }
+
+        h2 {
+            color: red; /* Green color for section headers */
+        }
+
+        blockquote {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #444; /* Darker background for blockquotes */
+            border-left: 5px solid red; /* Green left border for blockquotes */
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Space between images */
+        }
+
+        .collage img {
+            width: 100%; /* Make images responsive */
+            border: 5px solid #333; /* Black border around images */
+            border-radius: 5px; /* Rounded corners for a comic effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            transition: transform 0.2s; /* Animation for hover effect */
+        }
+
+        .collage img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">
+            <img src="icon.png" alt="Home" width="20" height="20">
+            Home
+        </a>
+        <div class="menu">
+            <a href="professional.html">Professional</a>
+            <a href="personality.html">Personality</a>
+            <a href="personal development.html">Personal Development</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="reference.html">Reference</a>
+        </div>
+    </div>
+
+    <!-- Personality Sections -->
+    <section id="trait-impact">
+        <h2>Strongest Trait and Hobby</h2>
+        <p>
+            As an <strong>extrovert</strong>, I thrive in social interactions within my academic environment, which enhances my participation in class discussions and group projects. My outgoing nature encourages collaboration and helps foster positive dynamics among peers, allowing me to take on leadership roles and effectively communicate ideas. Additionally, I actively network with teachers and mentors, which opens doors for academic support and collaboration. My hobby of <strong>reading various media—such as comics, manga, manhua, myths, and novels</strong>—further enriches my school life by broadening my perspectives and enhancing my critical thinking. Analyzing diverse narratives sharpens my analytical skills, while exposure to different cultures informs my contributions in discussions and assignments. Regular reading also improves my vocabulary, enabling me to articulate thoughts more clearly in both writing and presentations. Ultimately, the synergy between my extraversion and my passion for reading not only fosters strong social connections but also fuels my creativity and academic success, making learning a more enjoyable and enriching experience.
+        </p>
+        <div class="collage">
+            <img src="venom.jpg" alt="Image 1">
+            <img src="the oddesy.jpg" alt="Image 2">
+            <img src="sololeveling.jpg" alt="Image 3">
+            <img src="berserk.webp" alt="Image 4">
+            <img src="journeytothewest.jpg" alt="Image 5">
+            <img src="Bleach.png" alt="Image 6">
+        </div>
+    </section>
+
+    
+    <section id="hero">
+        <h2>My Hero</h2>       
+        <audio id="myAudio" controls>
+            <source src="The Spectacular Spider-Man - Opening Theme FULL VER. Cover by We.B.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="document.getElementById('myAudio').play()">Play Theme</button>        
+        
+        <p>
+            My hero is <strong>Spider-Man a.k.a Peter Parker </strong>, a fictional superhero created by Stan Lee and Steve Ditko for Marvel Comics. What sets Spider-Man apart for me is his relatability. Unlike many other superheroes, Peter faces everyday struggles like balancing school, work, and personal relationships while bearing the immense responsibility of being a superhero .He's a hero I admire because, beneath the mask, he is just a regular person trying to do the right thing. He deals with self-doubt, loss, and failure but never lets those challenges stop him from helping others. His resilience, humility, and strong moral compass inspire me to tackle my own obstacles and remind me that no matter the difficulties, staying true to your values is what matters most.        </p>
+        <img src="spidey.jpg" alt="Image of hero" style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0;">
+        <blockquote>
+            "<em>With Great Power, Comes Great Responsibility</em>"
+        </blockquote>
+        <p>This quote, spoken by Peter Parker's Uncle Ben, is Spider-Man's guiding principle. It reflects the moral weight of power and the obligation to use it for the greater good. It's a powerful reminder that the abilities or opportunities we have in life should be used responsibly to help others.</p>
+    </section>
+    
+    <section id="personality-test">
+        <h2>Personality Test Results</h2>
+        <p>
+            I took the <strong>16 Personalities</strong> and received the following results:
+        </p>
+        <img src="personal test.jpg" alt="Personality Test Results" id="test-results">
+        <p>
+            I believe this test has validity because the ENTP traits resonate with my personality. As a <strong>Debater</strong>, I often exhibit boldness and creativity, deconstructing and rebuilding ideas while pursuing my goals vigorously, even in the face of challenges. I enjoy spirited debates and challenging the status quo, using my quick wit and curiosity to engage in discussions. This aligns with my playful sense of humor and desire for intellectual growth. Thus, I find the ENTP assessment accurately reflects my tendencies and strengths. 
+        </p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Daniel's Portfolio</p>
+    </footer>
+</body>
+</html>

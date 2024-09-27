@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Portfolio</title>
+    <title>Daniel Lowe - Resume</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <style>
+        /* Simple reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Arial, sans-serif;
-            color: white; /* Set the default text color to black */
-            background-color: black; /* Optional, to set the background white */
+            background-color: black;
+            color: white;
         }
+
         /* Navbar styling */
         .navbar {
             position: fixed;
@@ -32,73 +35,114 @@
         .navbar .menu {
             display: flex;
         }
+
         .navbar .menu a {
             margin-left: 20px;
             text-decoration: none;
             color: black;
             font-size: 16px;
         }
+
         .navbar .menu a:hover {
             color: #007BFF;
         }
 
-        /* Style for the "Home" link */
-        .navbar a[href="#home"] {
-            font-weight: bold;
-            color: black;
-            text-decoration: none; /* Remove underline */
-            display: flex; /* Allows the image and text to be on the same line */
-            align-items: center; /* Vertically centers the image and text */
-        }
+        .navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+}
 
         /* Image next to Home text */
         .navbar a[href="#home"] img {
-            margin-right: 8px; /* Adds space between the image and text */
+            margin-right: 8px;
         }
 
-        /* Page Container */
+        /* Resume content */
         .container {
-            max-width: 1400px;
-            margin: 80px auto; /* Add margin to account for fixed navbar */
+            display: flex;
+            max-width: 1000px;
+            margin: 100px auto 20px; /* Adjust for the navbar */
             padding: 20px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-        }
-        .left-column, .right-column {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+            background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
-        .avatar {
-            width: 100%;
-            height: 200px;
+
+        .sidebar {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
-            object-fit: cover;
         }
-        .skills, .experience, .education {
-            margin-top: 20px;
+
+        .content {
+            flex: 2;
         }
-        .skill, .experience-item, .education-item {
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        section {
             margin-bottom: 20px;
         }
-        .progress-bar {
-            height: 10px;
-            border-radius: 10px;
-            background-color: #ddd;
-            overflow: hidden;
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #666;
+            margin-bottom: 10px;
         }
-        .progress-bar-inner {
-            height: 100%;
-            background-color: #4CAF50;
-            width: 90%; /* Adjust the width to change the progress */
+
+        h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
         }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        ul li {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
-            background-color: black;
+            background-color: #222;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -115,86 +159,84 @@
         </a>
         <div class="menu">
             <a href="professional.html">Professional</a>
-            <a href="Personality">Personality</a>
-            <a href="Personal Development">Personal Development</a>
-            <a href="Storyboard">Storyboard</a>
-            <a href="Reference">Reference</a>
+            <a href="personality.html">Personality</a>
+            <a href="personal development.html">Personal Development</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="reference.html">Reference</a>
         </div>
     </div>
 
-    <!-- Page Container -->
+    <!-- Main Resume Container -->
     <div class="container">
+        <!-- Sidebar with image -->
+        <div class="sidebar">
+            <img src="avatar.jpg" alt="Daniel Lowe's photo">
+        </div>
 
-        <!-- The Grid -->
-        <div class="grid">
+        <!-- Content section -->
+        <div class="content">
+            <header>
+                <h1>Daniel Lowe</h1>
+                <p>395 Cedar Grove, Bushy Park Mews, May Pen P.O., Clarendon</p>
+                <p>Telephone: (876)-778-3433 | Email: <a href="mailto:lowed711@gmail.com">lowed711@gmail.com</a></p>
+            </header>
 
-            <!-- Left Column -->
-            <div class="left-column">
+            <section>
+                <h2>Objective</h2>
+                <p>Seeking an opportunity that allows for practical application of academic learnings, while gaining valuable experience and developing professional competencies. Highly motivated, quick learner, and committed to achieving excellence through hard work and collaboration.</p>
+            </section>
 
-                <div class="avatar">
-                    <img src="avatar.jpg" alt="Avatar">
-                </div>
+            <section>
+                <h2>Education</h2>
+                <h3>Cert. in Business Studies | Glenmuir High School</h3>
+                <p>2016-2023</p>
+                <p>10 CSEC Subjects, 8 CAPE Subjects</p>
 
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div class="skill">
-                        <p>Adobe Photoshop</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-inner" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Photography</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-inner" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Illustrator</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-inner" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Media</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-inner" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                </div>
+                <h3>BS Computer Science | University of Technology, Jamaica</h3>
+                <p>2023-20xx</p>
 
-                <!-- Experience Section -->
-                <div class="experience">
-                    <h2>Experience</h2>
-                    <div class="experience-item">
-                        <h3 class="experience-item-header">Job Title at Company</h3>
-                        <div class="experience-item-content">
-                            <p>Details about the job and achievements.</p>
-                        </div>
-                    </div>
-                    <!-- Add more experience items as needed -->
-                </div>
+                <h3>Cert. in Lay Leadership | Bethel Bible College of the Caribbean</h3>
+                <p>2023</p>
 
-                <!-- Education Section -->
-                <div class="education">
-                    <h2>Education</h2>
-                    <div class="education-item">
-                        <h3 class="education-item-header">Degree at Institution</h3>
-                        <div class="education-item-content">
-                            <p>Details about the education and achievements.</p>
-                        </div>
-                    </div>
-                    <!-- Add more education items as needed -->
-                </div>
+                <h3>Cert. in Introduction to Cybersecurity | HEART College of Innovation & Technology (HCIT)</h3>
+                <p>2023</p>
+            </section>
 
-            </div>
+            <section>
+                <h2>Experience</h2>
+                <h3>Office Assistant | Foga Road High School</h3>
+                <p>2022-2023</p>
+                <p>Organized student files during summer internships through the Hope Youth Summer Work Programme.</p>
 
-            <!-- Right Column -->
-            <div class="right-column">
-                <h2>About Me</h2>
-                <p>This is where you can include information about yourself, your interests, and anything else you want to share!</p>
-            </div>
+                <h3>Summer Intern | Jamalco</h3>
+                <p>July 2024 - August 2024</p>
+                <p>Tasks included data collection and analysis, monitoring equipment performance, and assisting in project coordination. Also participated in safety inspections, helped with reporting on plant operations, and contributed to team meetings or presentations.</p>
 
+                <h3>Music and Multimedia Team | May Pen NTCOG</h3>
+                <p>2019-2024</p>
+                <p>Aids in providing streaming and sound services at the May Pen New Testament Church of God.</p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Project management</li>
+                    <li>Communication</li>
+                    <li>Audio and Visual Expertise</li>
+                    <li>Problem-solving</li>
+                    <li>Leadership</li>
+                    <li>Attention to detail</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Activities</h2>
+                <h3>First Tech Challenge 2023</h3>
+                <p>Member of Glenmuir’s High School’s Robotics Team, demonstrating the ability to work under pressure and come up with innovative solutions to technical challenges as part of the Winning Alliance.</p>
+
+                <h3>Evangelism Committee | UTECH's Universities and Colleges Christian Fellowship</h3>
+                <p>Active member, visiting homes and evangelizing to peers.</p>
+            </section>
         </div>
     </div>
 
